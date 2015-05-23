@@ -16,16 +16,17 @@
 #  David Hagege <david.hagege@gmail.com>
 #
 
-PRODUCTS = ['irobot']
-TO_EMAIL =  'your@email.com'
+# list of products you want to watch
+# Support any keyword or an amazon product id
+PRODUCTS = ['ricoh']
 
-mail_config = { :address              => "smtp.gmail.com",
-                :port                 => 587,
-                :domain               => 'your.host.name',
-                :user_name            => '<username>',
-                :password             => '<password>',
-                :authentication       => 'plain',
-                :enable_starttls_auto => true  }
+TO_EMAIL =  'your@email.com'
+FROM_EMAIL = 'amazon_deal@deal.com'
+
+mail_config = { :address              => "localhost",
+                :port                 => 25,
+                :authentication       => 'none',
+                :enable_starttls_auto => false  }
 
 
 
